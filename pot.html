@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="pot.css">
+	<script src="pot.js">// Get all project elements
+        const projects = document.querySelectorAll('.project');
+        
+        // Add event listener to each project title
+        projects.forEach((project) => {
+          const title = project.querySelector('h3');
+        
+          title.addEventListener('click', () => {
+            // Toggle the visibility of the project description
+            const description = project.querySelector('p');
+            description.classList.toggle('show');
+          });
+        });
+        </script>
+		
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1>My Portfolio</h1>
+			<nav>
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+            
+		</div>
+	</header>
+	<main>
+		<section id="about">
+			<div class="container">
+				<h2>About Me</h2>
+				<p>Hi there! My name is Olorunnisola Senator and I am a computer scientist with 3 years of experience. I am passionate about creating a website that are not only aesthetically pleasing, but also functional and user-friendly.
+
+                    I take pride in being able understand my clients' unique needs and translating them into effective designs that meet their goals and objectives.
+                    
+                    I am proficient in a variety of design tools and software, and am constantly seeking to expand my knowledge and skills to stay up-to-date with the latest trends and technologies in my field.
+                    
+                    When I'm not designing, you can find me playing basketball, which I find helps to inspire and refresh my creativity.
+                    
+                    I am excited to showcase my portfolio and share my passion for computer with you. Feel free to browse through my work and get in touch if you're interested in working together on a project.
+                    
+                    Thank you for stopping by!</p>
+			</div>
+		</section>
+		<section id="services">
+			<div class="container">
+				<h2>My Services</h2>
+				<ul>
+					<li>Networking</li>
+					<li>Web Development</li>
+					<li>Graphic Design</li>
+					<li>Cybersecurity</li>
+				</ul>
+			</div>
+		</section>
+		<section id="projects">
+			<div class="container">
+				<h2>My Projects</h2>
+				<div class="project">
+                    <a href="Project1.jpg">
+					<img src="project1.jpg" alt="Project 1">
+					<h3>Project 1</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </a>
+				</div>
+				<div class="project">
+                    <a href="Project2.JPG">
+					<img src="project2.jpg" alt="Project 2">
+					<h3>Project 2</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </a>
+				</div>
+				<div class="project">
+                    <a href="Project3.JPG">
+					<img src="project3.jpg" alt="Project 3">
+					<h3>Project 3</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </a>
+				</div>
+                <div class="project">
+                    <a href="Project4.jpg">
+					<img src="project4.jpg" alt="Project 4">
+					<h3>Project 4</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </a>
+				</div>
+                <div class="project">
+                    <a href="Project5.jpg">
+					<img src="Project5.jpg" alt="Project 5">
+					<h3>Project 5</h3>
+					<p>senator</p>
+                    </a>
+				</div>
+				<div class="project">
+                    <a href="Project6.jpg">
+					<img src="Project6.jpg" alt="Project 6">
+					<h3>Project 6</h3>
+					<p>Tech nation</p>
+                    </a>
+				</div>
+                  
+			</div>
+		</section>
+		<section id="contact">
+			<div class="container">
+				<h2>Contact Me</h2>
+				<form>
+					<label for="name">Name</label>
+					<input type="text" id="name" name="name" required>
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" required>
+					<label for="message">Message</label>
+					<textarea id="message" name="message" required></textarea>
+					<button type="submit">Send</button>
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer>
+        <div class="filter">
+            <button class="btn active" data-filter="all">All</button>
+            <button class="btn" data-filter="web">Web Design</button>
+            <button class="btn" data-filter="app">App Development</button>
+            <button class="btn" data-filter="brand"></button>Cybersecurity</button>
+          </div>
+		<div class="container">
+			<p>&copy; 2023 My Portfolio. All rights reserved.</p>
+		</div>
+    </footer>
+</body>
+</html>
